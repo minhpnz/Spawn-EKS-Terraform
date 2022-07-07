@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "my-cluster-backend"
+    bucket = var.name
     key    = "argocd"
     region = "ap-southeast-1"
   }
